@@ -15,10 +15,10 @@ Notifications will be send by email using the SNS service. An email subscription
 
 ## Deploy
 
-- Execute deploy script to create a ZIP file to deploy the lambda function:
+- Create a ZIP file to deploy the lambda function:
 
 ```
-# bin/deploy.sh
+# make all
 ```
 
 - Initialize Terraform
