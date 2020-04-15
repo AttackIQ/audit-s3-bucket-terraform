@@ -30,6 +30,9 @@ module "cloudtrail" {
   iam_role_arn = module.iam.cloudtrail_role_arn
   log_group_arn = module.cloudwatch.cloudtrail_log_group_arn
   monitored_s3_bucket_arn = data.aws_s3_bucket.monitored_bucket.arn
+  depends_on_ = [ 
+    module.s3.s3_bucket_policy_id
+  ]
 }
 
 module "sns" {

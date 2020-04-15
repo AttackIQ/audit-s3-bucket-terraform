@@ -17,4 +17,5 @@ resource "aws_cloudtrail" "s3-audit-trail" {
       values = ["${var.monitored_s3_bucket_arn}/"]
     }
   }
+  depends_on = [var.depends_on_]
 }
