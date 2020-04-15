@@ -1,3 +1,3 @@
 #!/bin/bash
 
-zip
+zip dist/lambda_function_payload.zip src/*
