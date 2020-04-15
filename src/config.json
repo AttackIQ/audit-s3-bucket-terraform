@@ -1,0 +1,5 @@
+{
+    "authorized_sources": ["54.153.44.90"],
+    "authorized_entities": ["role_with_permissions"], 
+    "sensitive_filename_keywords": ["cardholder", "secret", "password", "credentials", "key"]
+}
