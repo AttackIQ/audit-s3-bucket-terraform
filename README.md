@@ -1,4 +1,4 @@
-# Audit S3
+# Audit Unauthorized access to S3 Buckets
 
 This is a terraform code to deploy the necessary infrastructure to identify unauthorized activity to a S3 bucket.
 
@@ -8,7 +8,26 @@ Deployment details can be found here: https://attackiq.com/blog/2020/04/14/defea
 
 Notifications will be send by email using the SNS service. An email subscription to the SNS topic is needed once the TF is deployed.
 
+## Requirements
+
+- Terraform v0.12.18
+
+
 ## Deploy
+
+- Execute deploy script to create a ZIP file to deploy the lambda function:
+
+```
+# bin/deploy.sh
+```
+
+- Initialize Terraform
+
+```
+# terraform init
+```
+
+- Deploy
 
 ```
 # terraform apply
