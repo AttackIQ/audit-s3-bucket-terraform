@@ -1,3 +1,5 @@
 #!/bin/bash
 
-zip dist/lambda_function_payload.zip src/*
+cd src
+zip ../dist/lambda_function_payload.zip *
+cd ..
